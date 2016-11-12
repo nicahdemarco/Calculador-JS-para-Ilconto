@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+	<meta charset="utf-8">
+	<title>Calculadora de comensales</title>
+
+
+	
+
+
+	</head>
+
+
+<BODY>
+
+
+
+<script type="text/javascript">
+
+//Pido datos de ingreso al usuario
+
+	var esaldo   = window.prompt('Ingrese el saldo');
+	var ecant    = window.prompt("Ingrese cantidad de comensales");
+	var epropina = window.prompt("Ingrese propina");
+
+	var saldo    = parseInt(esaldo);    
+	var cant     = parseInt(ecant);
+	var propina  = parseInt(epropina);
+
+    var porc     = saldo + ((propina/100)*saldo)
+      
+    var saldocant= saldo / cant
+ 
+    var propdec  = propina;
+ 		propina  = propina.toFixed(2); //MEGA Excelsior!!! ( es una huevada, pero me rompia las bolas )
+
+
+ //calculo sin propina 
+
+ 	if (propina==0 && cant>0) {
+
+        alert( "Cada uno tiene que poner $ " + saldocant + " a ponerlaaaa...");
+
+    } else if (propina !=0 && cant!=0) {
+    	alert( "Cada uno tiene que poner $ " + porc + ", propina del " + propdec + " % incluída");
+    	
+    }
+    //DOble MEGA Excelsior!!! meti todo en uno
+      else var txt;
+         
+    var r = confirm("Querés pedir IlConto?");
+	
+	if (r == true) {
+
+    	alert ("El mozo esta en camino");
+
+	} else {
+    	alert ("Ok, seguí disfrutando");
+       	 	  
+}
+
+
+	</script> 
+
+ <!-- --> 
+
+		<p><h2> ToMAAAA NEjOOOOOO!!!</p>
+
+		<p><h1> <strong>SOmo' LOSOTROOOO' !!!</strong></p>
+		
+	
+</BODY>
+
+
+
+</HTML> 
